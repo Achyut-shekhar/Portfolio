@@ -1,0 +1,162 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Custom font families */
+    --font-body: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-special: "Nunito", ui-sans-serif, system-ui, sans-serif;
+    
+    /* Custom colors */
+    --color-brown: #53423e;
+    --color-light-brown: #645550;
+    --color-dark-brown: #2c2523;
+    --color-black: #1e1917;
+    --color-white: #f1e1d9;
+    --color-cyan: #15d1e9;
+    --color-light-cyan: #88e5f0;
+    --color-dark-cyan: #009fb3;
+    --color-orange: #fb9718;
+    --color-light-orange: #fac27b;
+    --color-dark-orange: #d28422;
+    --color-grey: #626965;
+    --color-light-grey: #978580;
+    --color-dark-grey: #3f4441;
+    
+    /* Custom breakpoints */
+    --breakpoint-sm: 350px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    
+    /* Base styles */
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Custom font utilities */
+  .font-body {
+    font-family: var(--font-body);
+  }
+  
+  .font-special {
+    font-family: var(--font-special);
+  }
+  
+  /* Custom color utilities */
+  .bg-brown { background-color: var(--color-brown); }
+  .bg-light-brown { background-color: var(--color-light-brown); }
+  .bg-dark-brown { background-color: var(--color-dark-brown); }
+  .bg-black { background-color: var(--color-black); }
+  .bg-white { background-color: var(--color-white); }
+  .bg-cyan { background-color: var(--color-cyan); }
+  .bg-light-cyan { background-color: var(--color-light-cyan); }
+  .bg-dark-cyan { background-color: var(--color-dark-cyan); }
+  .bg-orange { background-color: var(--color-orange); }
+  .bg-light-orange { background-color: var(--color-light-orange); }
+  .bg-dark-orange { background-color: var(--color-dark-orange); }
+  .bg-grey { background-color: var(--color-grey); }
+  .bg-light-grey { background-color: var(--color-light-grey); }
+  .bg-dark-grey { background-color: var(--color-dark-grey); }
+  
+  .text-brown { color: var(--color-brown); }
+  .text-light-brown { color: var(--color-light-brown); }
+  .text-dark-brown { color: var(--color-dark-brown); }
+  .text-black { color: var(--color-black); }
+  .text-white { color: var(--color-white); }
+  .text-cyan { color: var(--color-cyan); }
+  .text-light-cyan { color: var(--color-light-cyan); }
+  .text-dark-cyan { color: var(--color-dark-cyan); }
+  .text-orange { color: var(--color-orange); }
+  .text-light-orange { color: var(--color-light-orange); }
+  .text-dark-orange { color: var(--color-dark-orange); }
+  .text-grey { color: var(--color-grey); }
+  .text-light-grey { color: var(--color-light-grey); }
+  .text-dark-grey { color: var(--color-dark-grey); }
+  
+  .border-brown { border-color: var(--color-brown); }
+  .border-light-brown { border-color: var(--color-light-brown); }
+  .border-dark-brown { border-color: var(--color-dark-brown); }
+  .border-black { border-color: var(--color-black); }
+  .border-white { border-color: var(--color-white); }
+  .border-cyan { border-color: var(--color-cyan); }
+  .border-light-cyan { border-color: var(--color-light-cyan); }
+  .border-dark-cyan { border-color: var(--color-dark-cyan); }
+  .border-orange { border-color: var(--color-orange); }
+  .border-light-orange { border-color: var(--color-light-orange); }
+  .border-dark-orange { border-color: var(--color-dark-orange); }
+  .border-grey { border-color: var(--color-grey); }
+  .border-light-grey { border-color: var(--color-light-grey); }
+  .border-dark-grey { border-color: var(--color-dark-grey); }
+  
+  /* Custom box shadows */
+  .shadow-cyan {
+    box-shadow: 0px 0px 20px 0px rgba(94, 206, 220, 0.5);
+  }
+  
+  .shadow-cyan-big {
+    box-shadow: 10px 10px 1000px 500px rgba(94, 206, 220, 0.3);
+  }
+  
+  .shadow-cyan-medium {
+    box-shadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+  }
+  
+  .shadow-orange-big {
+    box-shadow: 10px 10px 10000px 500px rgba(240, 169, 79, 0.3);
+  }
+  
+  .shadow-orange-medium {
+    box-shadow: 10px 10px 2000px 150px rgba(240, 169, 79, 0.5);
+  }
+  
+  /* Custom breakpoint utilities */
+  @media (min-width: 350px) {
+    .sm\:block { display: block; }
+    /* Add more sm utilities as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .md\:block { display: block; }
+    /* Add more md utilities as needed */
+  }
+  
+  @media (min-width: 1024px) {
+    .lg\:block { display: block; }
+    /* Add more lg utilities as needed */
+  }
+  
+  @media (min-width: 1280px) {
+    .xl\:block { display: block; }
+    /* Add more xl utilities as needed */
+  }
+  
+  @media (min-width: 1536px) {
+    .twoxl\:block { display: block; }
+    /* Add more 2xl utilities as needed */
+  }
+}
+
+body{
+  font-family: var(--font-body);
+  line-height: 1.5;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  margin: 0;
+  padding: 0;
+}
