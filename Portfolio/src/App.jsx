@@ -4,12 +4,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' // Optional: Remove if you’re only using Tailwind
 import NavbarMain from './components/navbar/navbarmain'
+import HeroMain from './components/heroSection/HeroMain'
+import SubHeroMain from './components/subHeroSection/SubHeroSection'
+import AboutMeMain from './components/aboutMeSection/AboutMeMain'
+import SkillsMain from './components/skillsSection/SkillsMain'
 
 function App() {
 
-  return (
-    <NavbarMain />
-  )
+ return (
+  <main className='font-body'>
+    <NavbarMain></NavbarMain>
+    <HeroMain></HeroMain>
+    <SubHeroMain></SubHeroMain>
+    <AboutMeMain></AboutMeMain>
+    <SkillsMain></SkillsMain>
+  </main>
+ )
 }
 
 export default App

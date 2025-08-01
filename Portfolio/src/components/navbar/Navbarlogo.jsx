@@ -1,11 +1,15 @@
 import React from "react";
+
 const NavbarLogo = () => {
   return (
-    <div>
-      <h1 className="text-white  text-2xl sm:hidden md:block">
+    <div className="text-white">
+      {/* Full name on medium+ screens */}
+      <h1 className="hidden md:block text-2xl">
         Achyut Shekhar Singh
       </h1>
-      <h1 className="text-white font-special font-extrabold text-3xl md:hidden sm:block">
+
+      {/* Short initials on small screens only */}
+      <h1 className="block md:hidden text-3xl font-extrabold font-special">
         A.S.S
       </h1>
     </div>
