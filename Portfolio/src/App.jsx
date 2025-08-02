@@ -1,9 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import NavbarMain from "./components/navbar/NavbarMain";
-import "./App.css";
 
 import HeroMain from "./components/heroSection/HeroMain";
 import SubHeroMain from "./components/subHeroSection/SubHeroSection";
@@ -12,6 +7,7 @@ import SkillsMain from "./components/skillsSection/SkillsMain";
 import ProjectsMain from "./components/ProjectSection/ProjectsMain";
 import ContactMeMain from "./components/Contact/ContactMeMain";
 import FooterMain from "./components/footer/FooterMain";
+import NavbarMain from "./components/navbar/NavbarMain";
 function App() {
   return (
     <main className="font-body">
