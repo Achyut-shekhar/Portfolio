@@ -10,7 +10,7 @@ const NavbarLogo = () => {
 
       {/* Short initials on small screens only */}
       <h1 className="block md:hidden text-3xl font-extrabold font-special">
-        A.S.S
+        A.S
       </h1>
     </div>
   );
