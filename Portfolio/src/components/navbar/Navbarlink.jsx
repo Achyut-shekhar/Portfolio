@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 const links = [
   { link: "About Me", section: "about" },
   { link: "Skills", section: "skills" },
- 
   { link: "Projects", section: "projects" },
   { link: "Contact", section: "contact" },
 ];
@@ -20,8 +19,7 @@ const NavbarLinks = () => {
           text-white 
           font-body 
 
-          /* ✅ Desktop - Clean layout */
-          lg:relative 
+          /* ✅ Desktop */
           lg:text-md 
           lg:bg-transparent 
           lg:w-auto 
@@ -32,7 +30,7 @@ const NavbarLinks = () => {
           lg:rounded-none 
           lg:shadow-none
 
-          /* ✅ Mobile - Background, center positioning */
+          /* ✅ Mobile */
           sm:absolute 
           sm:top-[120%] 
           sm:left-1/2 
@@ -57,11 +55,12 @@ const NavbarLinks = () => {
               smooth={true}
               duration={500}
               offset={-130}
-              className="cursor-pointer text-white hover:text-orange transition-all duration-500"
+              activeClass="text-orange-400"
+              className="cursor-pointer text-white hover:text-orange-400 transition-all duration-500"
             >
               {link.link}
             </Link>
-            <div className="mx-auto bg-orange w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+            <div className="mx-auto bg-orange-400 w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
           </li>
         ))}
       </ul>
