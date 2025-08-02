@@ -8,7 +8,9 @@ import HeroMain from './components/heroSection/HeroMain'
 import SubHeroMain from './components/subHeroSection/SubHeroSection'
 import AboutMeMain from './components/aboutMeSection/AboutMeMain'
 import SkillsMain from './components/skillsSection/SkillsMain'
-
+import ProjectsMain from './components/ProjectSection/ProjectsMain'
+import ContactMeMain from './components/Contact/ContactMeMain'
+import FooterMain from './components/footer/FooterMain'
 function App() {
 
  return (
@@ -18,6 +20,10 @@ function App() {
     <SubHeroMain></SubHeroMain>
     <AboutMeMain></AboutMeMain>
     <SkillsMain></SkillsMain>
+    <ProjectsMain></ProjectsMain>
+    <ContactMeMain></ContactMeMain>
+    <FooterMain></FooterMain>
+    
   </main>
  )
 }
