@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from "react";
 import AllSkills from "./AllSkills";
 import AllSkillsSM from "./AllSkillsSM";
 import SkillsText from "./SkillsText";
@@ -10,6 +9,7 @@ const SkillsMain = () => {
   return (
     <div id="skills">
       <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
+        {/* Text */}
         <motion.div
           variants={fadeIn("down", 0.2)}
           initial="hidden"
@@ -18,10 +18,14 @@ const SkillsMain = () => {
         >
           <SkillsText />
         </motion.div>
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
+
+        {/* Desktop Skills (unchanged) */}
+        <div className="hidden lg:block absolute bottom-[50px] left-1/2 -translate-x-1/2 w-full">
           <AllSkills />
         </div>
-        <div className="sm:block lg:hidden">
+
+        {/* Mobile/Tablet Skills (new layout, avoids overlap) */}
+        <div className="block lg:hidden mt-10">
           <AllSkillsSM />
         </div>
       </div>
