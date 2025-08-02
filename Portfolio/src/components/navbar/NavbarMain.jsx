@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import NavbarLogo from "./navbarlogo";
-import NavbarLinks from "./navbarlink";
+import NavbarLogo from "./NavbarLogo";
+import NavbarLinks from "./Navbarlink";
 import NavbarBtn from "./Navbarbutton";
 import NavbarToggler from "./NavbarToggler";
 
